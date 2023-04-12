@@ -20,10 +20,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W    &kp F  &kp P      &kp B      &kp J  &kp L          &kp U    &kp Y  &kp SINGLE_QUOTE  &none
-&none  &kp A  &kp R    &kp S  &kp T      &kp G      &kp M  &kp N          &kp E    &kp I             &kp O  &none
-&none  &kp Z  &kp X    &kp C  &kp D      &kp V      &kp K  &kp H      &kp COMMA  &kp DOT          &kp FSLH  &none
-                     &kp ESC  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp BACKSPACE
+&none             &kp Q  &kp W    &kp F        &kp P    &kp B      &kp J  &kp L          &kp U    &kp Y      &kp SINGLE_QUOTE  &none
+&none             &kp A  &kp R    &kp S        &kp T    &kp G      &kp M  &kp N          &kp E    &kp I                 &kp O  &none
+&none  &mt Z LEFT_SHIFT  &kp X    &kp C        &kp D    &kp V      &kp K  &kp H      &kp COMMA  &kp DOT  &mt FSLH RIGHT_SHIFT  &none
+                                &kp ESC  &lt 1 SPACE  &kp TAB    &kp RET  &mo 2  &kp BACKSPACE
             >;
         };
 
@@ -35,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-   &kp TAB        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5      &kp N6    &kp N7    &kp N8     &kp N9  &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN    &kp UP  &kp RIGHT  &trans    &trans
- &kp LSHFT        &trans        &trans        &trans        &trans        &trans      &trans    &trans    &trans     &trans  &trans    &trans
-                                            &kp LGUI        &trans     &kp SPACE     &kp RET    &trans  &kp RALT
+&none  &kp EXCLAMATION        &kp AT      &kp HASH    &kp DOLLAR   &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp TILDE      &kp GRAVE  &none
+&none          &kp ESC  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4     &kp LEFT       &kp DOWN     &kp UP  &kp RIGHT  &kp BACKSPACE  &none
+&none           &trans        &trans        &trans        &trans        &trans       &trans         &trans     &trans     &trans         &trans  &none
+                                          &kp LGUI        &trans     &kp SPACE      &kp RET         &trans   &kp RALT
             >;
         };
 
