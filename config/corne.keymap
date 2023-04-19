@@ -17,16 +17,10 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <>;
-            bindings = <&kp ESC>;
-        };
-
-        combo_tab {
+        combo_super {
             timeout-ms = <50>;
             key-positions = <16 14>;
-            bindings = <&kp LCTRL>;
+            bindings = <&kp LCMD>;
         };
 
         combo_ralt {
@@ -41,20 +35,20 @@
             bindings = <&kp LALT>;
         };
 
-        combo_lgui {
+        combo_lctrl {
             timeout-ms = <50>;
             key-positions = <15 16>;
-            bindings = <&kp LGUI>;
-        };
-
-        combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <19 20>;
-            bindings = <&kp RGUI>;
+            bindings = <&kp LCTRL>;
         };
 
         combo_rctrl {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
             bindings = <&kp RCTRL>;
+        };
+
+        combo_rctrl {
+            bindings = <&kp RGUI>;
             key-positions = <21 19>;
         };
     };
