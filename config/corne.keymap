@@ -47,9 +47,9 @@
             bindings = <&kp RCTRL>;
         };
 
-        combo_rctrl {
-            bindings = <&kp RGUI>;
+        combo_rgui {
             key-positions = <21 19>;
+            bindings = <&kp RGUI>;
         };
     };
 
