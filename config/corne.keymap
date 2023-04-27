@@ -91,10 +91,10 @@
 
         EXT {
             bindings = <
-&none  &kp EXCLAMATION  &kp AT_SIGN      &kp HASH    &kp DOLLAR  &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp TILDE      &kp GRAVE  &none
-&none          &kp ESC    &sk RCTRL  &sk LEFT_ALT  &sk LEFT_GUI   &kp LSHIFT         &kp LEFT       &kp DOWN        &kp UP  &kp RIGHT  &kp BACKSPACE  &none
-&none        &kp LC(Z)    &kp LG(X)     &kp LG(C)         &none    &kp LG(V)    &double_colon   &small_arrow    &big_arrow      &none          &none  &none
-                                           &trans        &trans        &none            &none          &mo 3         &none
+&none  &kp EXCLAMATION       &kp AT_SIGN      &kp HASH    &kp DOLLAR  &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp TILDE      &kp GRAVE  &none
+&none          &kp ESC  &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_GUI   &kp LSHIFT         &kp LEFT       &kp DOWN        &kp UP  &kp RIGHT  &kp BACKSPACE  &none
+&none        &kp LC(Z)         &kp LC(X)     &kp LC(C)         &none    &kp LC(V)    &double_colon   &small_arrow    &big_arrow      &none          &none  &none
+                                                &trans        &trans        &none            &none          &mo 3         &none
             >;
         };
 
