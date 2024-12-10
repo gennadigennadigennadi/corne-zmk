@@ -31,11 +31,12 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_super {
-            timeout-ms = <50>;
-            key-positions = <16 15>;
-            bindings = <&kp LCMD>;
-        };
+        // combo_super {
+        //     timeout-ms = <50>;
+        //     //S+T
+        //     key-positions = <16 15>;
+        //     bindings = <&kp LCMD>;
+        // };
 
         combo_ralt {
             timeout-ms = <50>;
@@ -61,14 +62,16 @@
             bindings = <&kp RCTRL>;
         };
 
-        combo_rgui {
-            key-positions = <19 20>;
-            bindings = <&kp RGUI>;
-        };
+        // combo_rgui {
+        //     timeout-ms = <50>;
+        //     // N+E
+        //     key-positions = <19 20>;
+        //     bindings = <&kp RGUI>;
+        // };
 
         hyper {
             bindings = <&kp LA(LC(LG(LEFT_SHIFT)))>;
-            key-positions = <19 20 21>;
+            key-positions = <19 20>;
         };
     };
 
