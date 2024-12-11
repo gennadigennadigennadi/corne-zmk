@@ -12,7 +12,6 @@
     flavor = "tap-preferred";
     tapping_term_ms = <150>;
 };
-
 / {
     behaviors {
         ht: hold_tap {
@@ -38,29 +37,29 @@
         //     bindings = <&kp LCMD>;
         // };
 
-        combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <21 20>;
-            bindings = <&kp RALT>;
-        };
-
-        combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <14 15>;
-            bindings = <&kp LALT>;
-        };
-
-        combo_lctrl {
-            timeout-ms = <50>;
-            key-positions = <16 14>;
-            bindings = <&kp LCTRL>;
-        };
-
-        combo_rctrl {
-            timeout-ms = <50>;
-            key-positions = <19 21>;
-            bindings = <&kp RCTRL>;
-        };
+        // combo_ralt {
+        //     timeout-ms = <50>;
+        //     key-positions = <21 20>;
+        //     bindings = <&kp RALT>;
+        // };
+        //
+        // combo_lalt {
+        //     timeout-ms = <50>;
+        //     key-positions = <14 15>;
+        //     bindings = <&kp LALT>;
+        // };
+        //
+        // combo_lctrl {
+        //     timeout-ms = <50>;
+        //     key-positions = <16 14>;
+        //     bindings = <&kp LCTRL>;
+        // };
+        //
+        // combo_rctrl {
+        //     timeout-ms = <50>;
+        //     key-positions = <19 21>;
+        //     bindings = <&kp RCTRL>;
+        // };
 
         // combo_rgui {
         //     timeout-ms = <50>;
@@ -106,10 +105,10 @@
 
         default_layer {
             bindings = <
-&none  &kp Q         &kp W  &kp F    &kp P        &kp B             &kp J    &kp L       &kp U          &kp Y    &kp SINGLE_QUOTE  &none
-&none  &kp A         &kp R  &kp S    &ht LGUI T   &kp G             &kp M    &ht RGUI N  &kp E          &kp I    &kp O             &none
-&none  &ht LSHIFT Z  &kp X  &kp C    &kp D        &kp V             &kp K    &kp H       &kp COMMA      &kp DOT  &ht RSHIFT SLASH  &none
-                            &kp ESC  &lt 1 SPACE  &kp TAB           &kp RET  &mo 2       &kp BACKSPACE
+&none  &kp Q         &kp W        &kp F       &kp P        &kp B             &kp J    &kp L       &kp U          &kp Y        &kp SINGLE_QUOTE  &none
+&none  &ht LSHIFT A  &ht LCTRL R  &ht LALT S  &ht LGUI T   &kp G             &kp M    &ht RGUI N  &ht RALT E     &ht RCTRL I  &ht RSHIFT O      &none
+&none  &kp     Z     &kp X        &kp C       &kp D        &kp V             &kp K    &kp H       &kp COMMA      &kp DOT      &kp SLASH         &none
+                                  &kp ESC     &lt 1 SPACE  &kp TAB           &kp RET  &mo 2       &kp BACKSPACE
             >;
         };
 
@@ -120,7 +119,7 @@
 &none  &kp LC(Z)        &kp LC(X)         &kp LC(C)     &none         &kp LC(V)      &double_colon  &small_arrow   &big_arrow    &none      &none          &none
                                           &trans        &trans        &none          &none          &mo 3          &none
             >;
-        };
+       };
 
         sym {
             bindings = <
