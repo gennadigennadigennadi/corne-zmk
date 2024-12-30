@@ -42,8 +42,8 @@
             display-name = "Lower";
             bindings = <
                 &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT        &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR
-                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &trans 
-                &bt BT_CLR   &trans       &trans       &trans       &trans           &trans    &trans    &trans          &trans    &trans 
+                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp LEFT  &kp DOWN  &kp UP          &kp RIGHT &trans
+                &bt BT_CLR   &trans       &trans       &trans       &trans           &trans    &trans    &trans          &trans    &trans
                                           &kp LGUI     &trans       &kp SPACE        AS(RET)   &kp ESC   &kp TAB
             >;
         };
@@ -58,8 +58,14 @@
             >;
         };
 
-        extra_1 {
-            status = "reserved";
+        colemak {
+            display-name = "colemak";
+            bindings = <
+                &kp Q          &kp W         &kp F        &kp P         &kp B             &kp J    &kp L        &kp U           &kp Y         &kp SINGLE_QUOTE
+                &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LGUI T   &kp G             &kp M    &hmr RGUI N  &hmr RALT E     &hmr RCTRL I  &hmr RSHIFT O
+                &kp Z          &kp X         &kp C        &kp D         &kp V             &kp K    &kp H        &kp COMMA       &kp DOT       &kp SLASH
+                                             &kp ESC      &lt 1 SPACE   &kp TAB           &kp RET  &mo 2        &kp BACKSPACE
+            >;
         };
 
         extra_2 {
