@@ -53,6 +53,16 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "colemak";
+            bindings = <
+                &kp Q          &kp W         &kp F        &kp P         &kp B             &kp J    &kp L        &kp U           &kp Y         &kp SINGLE_QUOTE
+                &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LGUI T   &kp G             &kp M    &hmr RGUI N  &hmr RALT E     &hmr RCTRL I  &hmr RSHIFT O
+                &kp Z          &kp X         &kp C        &kp D         &kp V             &kp K    &kp H        &kp COMMA       &kp DOT       &kp SLASH
+                                             &kp ESC      &lt 1 SPACE   &kp TAB           &kp RET  &mo 2        &kp BACKSPACE
+            >;
+        };
+
+        base_layer {
             display-name = "Base";
             bindings = <
                 AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y)   AS(U)  AS(I)     AS(O)     AS(P)
@@ -82,15 +92,6 @@
             >;
         };
 
-        colemak {
-            display-name = "colemak";
-            bindings = <
-                &kp Q          &kp W         &kp F        &kp P         &kp B             &kp J    &kp L        &kp U           &kp Y         &kp SINGLE_QUOTE
-                &hml LSHIFT A  &hml LCTRL R  &hml LALT S  &hml LGUI T   &kp G             &kp M    &hmr RGUI N  &hmr RALT E     &hmr RCTRL I  &hmr RSHIFT O
-                &kp Z          &kp X         &kp C        &kp D         &kp V             &kp K    &kp H        &kp COMMA       &kp DOT       &kp SLASH
-                                             &kp ESC      &lt 1 SPACE   &kp TAB           &kp RET  &mo 2        &kp BACKSPACE
-            >;
-        };
 
         extra_2 {
             status = "reserved";
