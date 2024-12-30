@@ -40,6 +40,33 @@
             /* hold-trigger-on-release;             // delay positional check until key-release */
         };
     };
+
+    macros {
+        small_arrow: small_arrow {
+            compatible = "zmk,behavior-macro";
+            label = "small_arrow";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GREATER_THAN>;
+            wait-ms = <10>;
+        };
+
+        big_arrow: big_arrow {
+            compatible = "zmk,behavior-macro";
+            label = "big_arrow";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GREATER_THAN>;
+            wait-ms = <10>;
+        };
+
+        double_colon: double_colon {
+            compatible = "zmk,behavior-macro";
+            label = "double_colon";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp COLON>;
+            wait-ms = <10>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -53,12 +80,34 @@
             >;
         };
 
-        extra_2 {
-            status = "reserved";
+        EXT {
+            display-name = "left";
+            bindings = <
+                &kp EXCLAMATION  &kp AT_SIGN       &kp HASH      &kp DOLLAR    &kp PERCENT    &kp CARET      &kp AMPERSAND  &kp ASTERISK  &kp TILDE  &kp GRAVE
+                &kp ESC          &sk LEFT_CONTROL  &sk LEFT_ALT  &sk LEFT_GUI  &kp LSHIFT     &kp LEFT       &kp DOWN       &kp UP        &kp RIGHT  &kp BACKSPACE
+                &kp LC(Z)        &kp LC(X)         &kp LC(C)     &none         &kp LC(V)      &double_colon  &small_arrow   &big_arrow    &none      &none
+                                                   &trans        &trans        &none          &none          &mo 3          &none
+            >;
         };
 
-        extra_3 {
-            status = "reserved";
+        sym {
+            display-name = "right";
+            bindings = <
+                &kp EXCL   &kp AT     &kp HASH  &kp COLON  &kp SEMICOLON    &kp EQUAL     &kp N7  &kp N8  &kp N9  &kp PLUS
+                &kp BSLH   &kp PIPE   &kp LBRC  &kp LPAR   &kp LBKT         &kp ASTERISK  &kp N4  &kp N5  &kp N6  &kp MINUS
+                &kp MINUS  &kp UNDER  &kp RBRC  &kp RPAR   &kp RBKT         &kp N0        &kp N1  &kp N2  &kp N3  &kp FSLH
+                                      &none     &mo 3      &none            &kp ENTER     &trans  &none
+            >;
         };
+
+        Sym2 {
+            display-name = "both";
+            bindings = <
+                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &bt BT_CLR      &trans  &kp F7  &kp F8  &kp F9  &kp GRAVE
+                &trans        &kp K_PREV    &kp C_PREV    &kp C_PLAY         &kp C_NEXT      &trans  &kp F4  &kp F5  &kp F6  &kp TILDE
+                &kp C_BRI_DN  &kp C_BRI_UP  &kp C_MUTE    &kp C_VOLUME_DOWN  &kp C_VOL_UP    &trans  &kp F1  &kp F2  &kp F3  &kp QUESTION
+                                            &none         &none              &trans          &none   &trans  &trans
+            >;
+        }; 
     };
 };
